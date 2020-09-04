@@ -1,27 +1,39 @@
 const quadrants = [
   {
-    action: 'eat',
+    quadName: 'eat',
     statusName: 'full',
     statusValue: 100,
-    actionValues: [10, -3],
+    actionValues: [
+      { actionName: 'healthy food', actionVal: 10 },
+      { actionName: 'unhealthy food', actionVal: -3 },
+    ],
   },
   {
-    action: 'play',
+    quadName: 'play',
     statusName: 'fun',
     statusValue: 50,
-    actionValues: [50, 2],
+    actionValues: [
+      { actionName: 'super fun', actionVal: 50 },
+      { actionName: 'slightly fun', actionVal: 2 },
+    ],
   },
   {
-    action: 'fight',
+    quadName: 'fight',
     statusName: 'strength',
     statusValue: 100,
-    actionValues: [1, -10],
+    actionValues: [
+      { actionName: 'flight', actionVal: 1 },
+      { actionName: 'fight', actionVal: -10 },
+    ],
   },
   {
-    action: 'sleep',
+    quadName: 'sleep',
     statusName: 'energy',
     statusValue: 50,
-    actionValues: [50, 60],
+    actionValues: [
+      { actionName: 'deep slumber', actionVal: 60 },
+      { actionName: 'nap', actionVal: 50 },
+    ],
   },
 ];
 
