@@ -1,5 +1,7 @@
-const showQuadrants = () => {
-  console.log('testing');
+const loadQuadrants = () => {
+  const domString = $('#eat').html(`
+  <h2>Title: 
+  `);
 };
 
-export default { showQuadrants };
+export default { loadQuadrants };
