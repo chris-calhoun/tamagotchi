@@ -1,33 +1,27 @@
-const { default: quadrants } = require('../javascripts/components/quadrants');
-
-quadrants = [
+const quadrants = [
   {
     action: 'eat',
     statusName: 'full',
     statusValue: 100,
-    action1: 10,
-    action2: -3,
+    actionValues: [10, -3],
   },
   {
     action: 'play',
     statusName: 'fun',
     statusValue: 50,
-    action1: 50,
-    action2: 2,
+    actionValues: [50, 2],
   },
   {
     action: 'fight',
     statusName: 'strength',
     statusValue: 100,
-    action1: 1,
-    action2: -10,
+    actionValues: [1, -10],
   },
   {
     action: 'sleep',
     statusName: 'energy',
     statusValue: 50,
-    action1: 50,
-    action2: 60,
+    actionValues: [50, 60],
   },
 ];
 

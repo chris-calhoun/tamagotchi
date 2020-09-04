@@ -1,7 +1,7 @@
+import quadrantData from '../../data/quadrantData';
+
 const loadQuadrants = () => {
-  const domString = $('#eat').html(`
-  <h2>Title: 
-  `);
+  quadrantData.getQuadrants().forEach((quad) => console.log(quad));
 };
 
 export default { loadQuadrants };
