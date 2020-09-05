@@ -1,8 +1,8 @@
 import '../styles/main.scss';
-import quadrants from './components/quadrants';
+import Quadrants from './components/quadrants';
 
 const init = () => {
-  quadrants.loadQuadrants();
+  Quadrants.loadQuadrants();
 };
 
 init();
