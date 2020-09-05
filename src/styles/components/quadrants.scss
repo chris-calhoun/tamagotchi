@@ -4,5 +4,18 @@
 }
 
 .quad {
-    background: $quadrant1;
+    border: solid black 2px;
+    padding: 10px;
+    margin:5%;
+}
+%quadrant {
+    border: 2px solid black;
+    width: 400px;
+}
+
+@each $action, $quadrant-color in $quad-list{
+    .card-#{$action} {
+        @extend %quadrant;
+        background-color: $quadrant-color;
+    }
 }
