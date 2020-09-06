@@ -1,5 +1,6 @@
 const quadrants = [
   {
+    quadId: 1,
     quadName: 'eat',
     statusName: 'full',
     statusValue: 100,
@@ -9,6 +10,7 @@ const quadrants = [
     ],
   },
   {
+    quadId: 2,
     quadName: 'play',
     statusName: 'fun',
     statusValue: 50,
@@ -18,6 +20,7 @@ const quadrants = [
     ],
   },
   {
+    quadId: 3,
     quadName: 'fight',
     statusName: 'strength',
     statusValue: 100,
@@ -27,6 +30,7 @@ const quadrants = [
     ],
   },
   {
+    quadId: 4,
     quadName: 'sleep',
     statusName: 'energy',
     statusValue: 50,
