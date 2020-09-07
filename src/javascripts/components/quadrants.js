@@ -18,6 +18,9 @@ const btnEventFunction = () => {
     const id = parseInt(arr[0], 10) - 1;
     const btnNum = arr[1];
     QuadData.getQuadrants()[id].statusValue += QuadData.getQuadrants()[id].actionValues[btnNum].actionVal;
+    if (QuadData.getQuadrants()[id].statusValue > 100) {
+      QuadData.getQuadrants()[id].statusValue = 100;
+    }
     loadQuadrants();
   });
 };
