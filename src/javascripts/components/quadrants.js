@@ -17,7 +17,12 @@ const btnEventFunction = () => {
     const arr = e.target.id.split('-');
     const id = parseInt(arr[0], 10) - 1;
     const btnNum = arr[1];
+    //Update Value
     QuadData.getQuadrants()[id].statusValue += QuadData.getQuadrants()[id].actionValues[btnNum].actionVal;
+    // Limit
+    if (QuadData.getQuadrants()[id].statusValue > 100) {
+      QuadData.getQuadrants()[id].statusValue = 100;
+    }
     loadQuadrants();
   });
 };
